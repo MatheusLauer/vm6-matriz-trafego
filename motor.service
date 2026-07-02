@@ -1,0 +1,12 @@
+[Unit]
+Description=API Motor Analitico - Equipe de Redes (VM6)
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/opt/motor_analitico
+ExecStart=/opt/motor_analitico/venv/bin/python3 main.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
