@@ -82,7 +82,7 @@ ssh -L 8000:10.0.20.20:8000 root@10.10.1.22
 Mapeia a porta 8000 do localhost para a porta 8000 da VM6 (10.0.20.20), permitindo visualizar a Matriz de Tráfego final pelo navegador do laboratório.
 
 
-6. O Código do Motor Analítico (main.py)
+## 6. O Código do Motor Analítico (main.py)
 
 Foi desenvolvido em Python. O script atua como uma API RESTful que consome os dados da VM1, normaliza, agrupa e exporta para JSON.
 ```
@@ -146,7 +146,7 @@ if __name__ == "__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
 ```
 
-7. Serviço de Background (systemd)
+## 7. Serviço de Background (systemd)
 
 Para garantir a alta disponibilidade da aplicação, o código não é executado diretamente no terminal, mas sim acoplado ao gerenciador de serviços do Linux. Foi criado o arquivo /etc/systemd/system/motor.service:
 
@@ -171,12 +171,12 @@ systemctl status motor.service
 ```
 
 
-8. Tolerância a Falhas e Resiliência
+## 8. Tolerância a Falhas e Resiliência
 
 Um requisito fundamental atendido no projeto foi a resiliência a quedas de rede. O script foi projetado com blocos try-except que identificam anomalias na comunicação com a API Central (Timeout, Erro 401 de Autenticação ou Queda de Conexão). Caso a VM1 fique inacessível, o sistema não "quebra", mas simula uma tabela de roteamento de contingência para manter as Dashboards funcionando (Fallback).
 
 
-9. Testes e Validações Finais
+## 9. Testes e Validações Finais
 
 Antes de expor a API para a rede externa, o sistema foi validado internamente via linha de comando (CLI) na própria máquina:
 
