@@ -56,7 +56,7 @@ Acesso à máquina ponte (Jump Host / Máquina do Joab-VM11):
 ```
 ssh root@10.10.1.22
 ```
-O que faz: Inicia uma conexão segura (Secure Shell) a partir do computador físico do laboratório para a máquina que serve como porta de entrada da nuvem.
+Inicia uma conexão segura (Secure Shell) a partir do computador físico do laboratório para a máquina que serve como porta de entrada da nuvem.
 
 Acesso à VM6 (Motor Analítico):
 ```  
