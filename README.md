@@ -68,13 +68,13 @@ Uma vez dentro da máquina ponte, este comando faz um novo salto para a máquina
 
 Como as máquinas virtuais possuíam IPs privados, o navegador físico não conseguia acessá-las diretamente. A solução foi criar túneis.
 
-Túnel para acessar a API Central (VM1):
+### Túnel para acessar a API Central (VM1):
 ```
 ssh -L 8080:10.0.20.10:80 root@10.10.1.22
 ```
 Mapeia a porta 8080 do localhost (PC físico) para a porta 80 da VM1 (10.0.20.10), passando por dentro da máquina ponte.
 
-Túnel para acessar a API do Motor (VM6):
+### Túnel para acessar a API do Motor (VM6):
     ```
 ssh -L 8000:10.0.20.20:8000 root@10.10.1.22
     ```
