@@ -44,14 +44,14 @@ systemctl start motor.service
 O ambiente do projeto estava dentro de uma nuvem privada (OpenStack), o que exigiu que você fizesse saltos entre as máquinas para chegar ao seu destino.
 
 Acesso à máquina ponte (Jump Host / Máquina do Joab-VM11):
-Bash
+
 
 ssh root@10.10.1.22
 
     O que faz: Inicia uma conexão segura (Secure Shell) a partir do seu computador físico do laboratório para a máquina que serve como porta de entrada da nuvem.
 
 Acesso à sua máquina (VM6 - Motor Analítico):
-Bash
+
 
 ssh root@10.0.20.20
 
@@ -62,14 +62,14 @@ ssh root@10.0.20.20
 Como as máquinas virtuais possuíam IPs privados, o navegador físico não conseguia acessá-las diretamente. A solução foi criar túneis.
 
 Túnel para acessar a API Central (VM1):
-Bash
+
 
 ssh -L 8080:10.0.20.10:80 root@10.10.1.22
 
     O que faz: Mapeia a porta 8080 do seu localhost (PC físico) para a porta 80 da VM1 (10.0.20.10), passando por dentro da máquina ponte (10.10.1.22).
 
 Túnel para acessar a sua API (VM6):
-Bash
+
 
 ssh -L 8000:10.0.20.20:8000 root@10.10.1.22
 
