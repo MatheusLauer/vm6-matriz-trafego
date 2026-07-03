@@ -46,7 +46,7 @@ systemctl enable motor.service
 systemctl start motor.service
 ```
 
-5. Acesso e Navegação de Rede
+## 5. Acesso e Navegação de Rede
 
 ### Navegação via SSH
 
