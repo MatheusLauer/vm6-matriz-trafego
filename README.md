@@ -73,4 +73,4 @@ Túnel para acessar a sua API (VM6):
 
 ssh -L 8000:10.0.20.20:8000 root@10.10.1.22
 
-    O que faz: Mapeia a porta 8000 do seu localhost para a porta 8000 da sua VM6 (10.0.20.20). Isso permitiu visualizar a sua Matriz de Tráfego final pelo Navegador do laboratório.
+    O que faz: Mapeia a porta 8000 do seu localhost para a porta 8000 da sua VM6 (10.0.20.20). Isso permitiu visualizar a Matriz de Tráfego final pelo Navegador do laboratório.
