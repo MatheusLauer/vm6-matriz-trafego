@@ -1,4 +1,4 @@
-# Motor Analítico (VM6) - Plataforma Distribuída de Redes
+# Motor Analítico (VM6) 
 
 **Aluno:** Matheus Pissarra Lauer 
 
