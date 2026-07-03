@@ -41,7 +41,7 @@ systemctl start motor.service
 ## 5. Acesso e Navegação de Rede
 1. Navegação via SSH
 
-O ambiente do projeto estava dentro de uma nuvem privada (OpenStack), o que exigiu que você fizesse saltos entre as máquinas para chegar ao seu destino.
+O ambiente do projeto estava dentro de uma nuvem privada (OpenStack), o que exigiu a realização de saltos entre as máquinas para chegar ao seu destino.
 
 Acesso à máquina ponte (Jump Host / Máquina do Joab-VM11):
 
