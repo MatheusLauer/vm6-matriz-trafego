@@ -184,4 +184,4 @@ Antes de expor a API para a rede externa, o sistema foi validado internamente vi
 curl -s http://localhost:8000/gerar-matriz
 ```
 
-O resultado final, acessado via túnel SSH no navegador, comprova a ingestão e agregação dos dados reais da rede, formatados em JSON:
+O resultado final, acessado via túnel SSH no navegador, comprova a ingestão e agregação dos dados reais da rede, formatados em JSON.
